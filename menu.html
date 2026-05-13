@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Ember & Oak | Fine Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Ember <span>&</span> Oak</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="about.html">Our Story</a>
+            <a href="gallery.html">Atmosphere</a>
+        </nav>
+        <a href="index.html#reservations" class="btn-solid">Reserve Your Table</a>
+    </header>
+
+    <section class="section-padding text-center" style="background-image: url('https://images.unsplash.com/photo-1428515613728-6b4607e44363?q=80&w=1920&auto=format&fit=crop'); background-size: cover; background-position: center; position: relative;">
+        <div class="hero-overlay" style="background: rgba(28,25,23,0.7);"></div>
+        <div style="position: relative; z-index: 10;">
+            <h1 class="section-title" style="font-size: 4.5rem; margin-bottom: 10px;">Dinner Menu</h1>
+            <p style="color: var(--text-main); text-transform: uppercase; letter-spacing: 5px;">Transparent pricing, seasonal results.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="menu-container">
+            
+            <div id="drinks" class="menu-category">
+                <h2>Bespoke Libations</h2>
+                
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">The Oak Smoked Old Fashioned</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$18</span>
+                    </div>
+                    <div class="menu-item-desc">Knob Creek Bourbon, maple demerara, angostura bitters, smoked table-side with local white oak.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Hearth-Roasted Paloma</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$16</span>
+                    </div>
+                    <div class="menu-item-desc">Aged Tequila, charred jalapeño, fresh grapefruit juice, hibiscus botanical salt rim.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Blackberry & Sage Gin Fizz</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$16</span>
+                    </div>
+                    <div class="menu-item-desc">Artisan Gin, house-muddled local sage, blackberry shrub, fresh lemon.</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>Heirloom Starters</h2>
+                
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Woodfired Bone Marrow</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$26</span>
+                    </div>
+                    <div class="menu-item-desc">Garlic onion jam, fresh parsley and lemon salad, grilled artisan sourdough.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Charred Spanish Octopus</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$28</span>
+                    </div>
+                    <div class="menu-item-desc">45-day aged paprika oil, crispy fingerling potatoes, salsa verde.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Hearth Burrata & Blistered Tomatoes</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$22</span>
+                    </div>
+                    <div class="menu-item-desc">12-year aged balsamic, basil oil, warm focaccia.</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>From the Oak Hearth</h2>
+                <p style="color: var(--primary-accent); text-align: center; margin-bottom: 20px; font-weight: bold; text-transform: uppercase;">*All Prime Steaks are dry-aged for 45 days and cooked over our custom wood fire.</p>
+                
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">16oz Dry-Aged Ribeye</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$62</span>
+                    </div>
+                    <div class="menu-item-desc">Smoked sea salt, roasted bone marrow butter.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Whole Mediterranean Branzino</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$54</span>
+                    </div>
+                    <div class="menu-item-desc">Fire-roasted whole, stuffed with lemon and fresh herbs, charred fennel.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Hearth Half Chicken</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$38</span>
+                    </div>
+                    <div class="menu-item-desc">Local organic chicken, lemon-thyme brine, charred broccolini, natural pan jus.</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>Rustic Sides</h2>
+                
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Hearth-Roasted Asparagus</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$14</span>
+                    </div>
+                    <div class="menu-item-desc">Lemon zest, shaved cured egg yolk.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Lobster Mac & Cheese</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$24</span>
+                    </div>
+                    <div class="menu-item-desc">Truffle oil, aged cheddar, butter-poached lobster.</div>
+                </div>
+            </div>
+
+            <div id="tasting" class="menu-category" style="background-color: var(--bg-panel); padding: 50px; border-radius: 4px; border: 1px solid var(--border-color);">
+                <h2 style="border: none;">The Chef's Tasting Experience</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; text-align: center; max-width: 700px; margin: 0 auto 30px;">Allow Chef Cole and his team to take you on a seven-course culinary journey, moving from our ocean starters through our dry-aged beef program, all prepared over the fire. Sommelier pairing included.</p>
+                <div style="text-align: center;">
+                    <p style="font-family: 'Merriweather', serif; font-size: 1.8rem; font-weight: 700; color: var(--primary-accent);">$195 Per Guest</p>
+                    <p style="color: var(--text-muted); font-style: italic; margin-top: 10px;">*Requires full table participation and 24-hour notice.</p>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>The Final Act</h2>
+                
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Burnt Basque Cheesecake</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$15</span>
+                    </div>
+                    <div class="menu-item-desc">Caramelized exterior, velvety cream center, seasonal berry compote.</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Skillet Chocolate Chip Cookie</span>
+                        <div class="menu-item-dots"></div>
+                        <span class="menu-item-price">$14</span>
+                    </div>
+                    <div class="menu-item-desc">House-baked, topped with vanilla bean gelato and sea salt.</div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 80px;">
+                <a href="#reservations" class="btn-solid" style="padding: 16px 40px; font-size: 1rem;">Experience the Hearth</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="reservations">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ember & Oak Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
