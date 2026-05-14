@@ -293,3 +293,52 @@ footer { background-color: #111111; padding: 100px 5% 50px; border-top: 1px soli
         letter-spacing: 1.5px;
     }
 }
+
+.hero {
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border: 1px solid rgba(188, 156, 108, 0.36);
+    pointer-events: none;
+}
+
+.feature-img,
+.photo-gallery img {
+    box-shadow: 0 22px 56px rgba(0, 0, 0, 0.22);
+}
+
+.feature-text {
+    position: relative;
+}
+
+.feature-text::before {
+    content: "";
+    width: 54px;
+    height: 2px;
+    margin-bottom: 26px;
+    background: var(--primary-accent);
+}
+
+.menu-item {
+    background-image: linear-gradient(90deg, rgba(188,156,108,0.06), transparent 42%);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .nav-links a {
+        flex: 0 1 auto;
+    }
+
+    .hero::after {
+        inset: 14px;
+    }
+}
